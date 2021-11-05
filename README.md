@@ -1,14 +1,34 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# Javaの世界へようこそ
+このレッスンでは、Javaの基本的なコードの書き方、出力について学んでいきます。
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+### 文字を出力してみよう
+`System.out.println` を使って文字をコンソールにだしてみよう。
 
-### Setup command
-N/A
+##### コーディング
 
-### Run command
-`gradle test`
+1. `Greeting.java` ファイルを作成
+2. `Greeting.java` に以下の内容を書き写す
 
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+```java
+class Greeting {
+  public static void main(String[] args) {
+    // あいさつ
+    System.out.println("はろー");
+  }
+}
+```
+
+##### 実行
+1. コマンドプロンプトを立ち上げる
+2. 以下のコマンドを実行
+
+```console
+$ javac Greeting.java
+$ java Greeting 
+$ はろー
+```
+
+### TODO
+- [ ] `Hello` を出力してみよう
+- [ ] 出力を確認できたら commit & push をしてみよう
+- [ ] 実行結果が緑色になることを確認しよう 
